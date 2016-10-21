@@ -112,6 +112,10 @@
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="MyTableSource.cs" />
+    <Compile Include="CustomTableViewCell.cs" />
+    <Compile Include="CustomTableViewCell.designer.cs">
+      <DependentUpon>CustomTableViewCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

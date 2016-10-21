@@ -19,8 +19,9 @@ namespace iOSCustomTableView
 
 		public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
 		{
-			var cell = tableView.DequeueReusableCell("characterCell");
-			cell.TextLabel.Text = characters[indexPath.Row].ToString();
+			var cell = tableView.DequeueReusableCell("characterCell") as CustomTableViewCell;
+
+			cell.UpdateCell(characters[indexPath.Row]);
 
 			return cell;
 		}
